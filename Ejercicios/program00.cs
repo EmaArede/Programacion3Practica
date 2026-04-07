@@ -1,0 +1,13 @@
+Console.WriteLine("Hola Mundo");
+Console.WriteLine("mi nombre es: ");
+Console.ForegroundColor=ConsoleColor.Green;
+Console.WriteLine("Emanuel Arede Suárez");
+Console.ResetColor();
+Console.WriteLine("Estoy cursando:");
+Console.ForegroundColor=ConsoleColor.Yellow;
+Console.WriteLine("Programación 3");
+Console.ResetColor();
+Console.WriteLine("De la Carrera :");
+Console.ForegroundColor=ConsoleColor.Cyan;
+Console.WriteLine("Tecnicatura Universitaria en Programación");
+Console.ResetColor();
