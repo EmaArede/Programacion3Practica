@@ -11,3 +11,4 @@ Console.WriteLine("De la Carrera :");
 Console.ForegroundColor=ConsoleColor.Cyan;
 Console.WriteLine("Tecnicatura Universitaria en Programación");
 Console.ResetColor();
+Console.WriteLine("Muchas Gracias");
