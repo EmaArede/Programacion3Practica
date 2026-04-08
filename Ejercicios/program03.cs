@@ -1,17 +1,62 @@
-  Console.WriteLine("=== PROMEDIO DE TEMPERATURA - 5 DÍAS ===\n");
+int opcion;
 
-            double[] temperaturas = { 22.5, 23.8, 21.3, 24.0, 22.7 };
-            string[] dias = { "Lunes", "Martes", "Miércoles", "Jueves", "Viernes" };
-
-            double suma = 0;
-
-            for (int i = 0; i < temperaturas.Length; i++)
+            do
             {
-                suma += temperaturas[i];
-                Console.WriteLine($"{dias[i]}: {temperaturas[i]}°C");
-            }
+                Console.Clear();
+                Console.WriteLine("=== CONVERSOR DE UNIDADES ===\n");
+                Console.WriteLine("1. Convertir °F a °C");
+                Console.WriteLine("2. Convertir pies a metros");
+                Console.WriteLine("3. Salir");
+                Console.Write("\nSelecciona una opción: ");
+                opcion = int.Parse(Console.ReadLine());
 
-            double promedio = suma / temperaturas.Length;
+                switch (opcion)
+                {
+                    case 1:
+                        ConvertirFahrenheitACelsius();
+                        break;
+                    case 2:
+                        ConvertirPiesAMetros();
+                        break;
+                    case 3:
+                        Console.WriteLine("\n¡Hasta luego!");
+                        break;
+                    default:
+                        Console.WriteLine("\n Opción no válida. Intenta de nuevo.");
+                        break;
+                }
 
-            Console.WriteLine($"\n Suma de temperaturas: {suma}°C");
-            Console.WriteLine($" Promedio de temperatura: {promedio:F2}°C");
+                if (opcion != 3)
+                {
+                    Console.WriteLine("\nPresiona cualquier tecla para continuar...");
+                    Console.ReadKey();
+                }
+
+            } while (opcion != 3);
+             static void ConvertirFahrenheitACelsius()
+        {
+            Console.Clear();
+            Console.WriteLine("=== CONVERTIR °F A °C ===\n");
+
+            Console.Write("Ingresa la temperatura en grados Fahrenheit: ");
+            double fahrenheit = double.Parse(Console.ReadLine());
+
+            // Fórmula: (°F - 32) * 5/9
+            double celsius = (fahrenheit - 32) * 5 / 9;
+
+            Console.WriteLine($"\n {fahrenheit}°F equivale a {celsius:F2}°C");
+        }
+
+        static void ConvertirPiesAMetros()
+        {
+            Console.Clear();
+            Console.WriteLine("=== CONVERTIR PIES A METROS ===\n");
+
+            Console.Write("Ingresa la longitud en pies: ");
+            double pies = double.Parse(Console.ReadLine());
+
+            // 1 pie = 0.3048 metros
+            double metros = pies * 0.3048;
+
+            Console.WriteLine($"\n {pies} pies equivale a {metros:F2} metros");
+        }
