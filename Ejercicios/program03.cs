@@ -22,13 +22,13 @@ int opcion;
                         Console.WriteLine("\n¡Hasta luego!");
                         break;
                     default:
-                        Console.WriteLine("\n Opción no válida. Intenta de nuevo.");
+                        Console.WriteLine("\n Opción no válida.");
                         break;
                 }
 
                 if (opcion != 3)
                 {
-                    Console.WriteLine("\nPresiona cualquier tecla para continuar...");
+                    Console.WriteLine("\nPresiona cualquier tecla para continuar");
                     Console.ReadKey();
                 }
 
@@ -38,13 +38,13 @@ int opcion;
             Console.Clear();
             Console.WriteLine("=== CONVERTIR °F A °C ===\n");
 
-            Console.Write("Ingresa la temperatura en grados Fahrenheit: ");
+            Console.Write("Ingresa la temperatura en °F: ");
             double fahrenheit = double.Parse(Console.ReadLine());
 
-            // Fórmula: (°F - 32) * 5/9
+        
             double celsius = (fahrenheit - 32) * 5 / 9;
 
-            Console.WriteLine($"\n {fahrenheit}°F equivale a {celsius:F2}°C");
+            Console.WriteLine($"\n {fahrenheit}°F = {celsius:F2}°C");
         }
 
         static void ConvertirPiesAMetros()
@@ -55,8 +55,8 @@ int opcion;
             Console.Write("Ingresa la longitud en pies: ");
             double pies = double.Parse(Console.ReadLine());
 
-            // 1 pie = 0.3048 metros
+            
             double metros = pies * 0.3048;
 
-            Console.WriteLine($"\n {pies} pies equivale a {metros:F2} metros");
+            Console.WriteLine($"\n {pies} pies = {metros:F2} metros");
         }
