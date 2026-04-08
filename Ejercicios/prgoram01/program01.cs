@@ -1,3 +1,11 @@
+using System;
+
+namespace CajeroLogin
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
 Console.WriteLine("=== CAJERO AUTOMÁTICO ===\n");
 
             string[] usuarios = { "admin", "cajero1", "cajero2" };
@@ -41,3 +49,6 @@ Console.WriteLine("=== CAJERO AUTOMÁTICO ===\n");
 
             Console.WriteLine("\nPresiona cualquier tecla para salir...");
             Console.ReadKey();
+              }
+    }
+}
