@@ -1,3 +1,11 @@
+using System;
+
+namespace RegistroUsuarioSimple
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
 int opcion;
 
             do
@@ -60,3 +68,6 @@ int opcion;
 
             Console.WriteLine($"\n {pies} pies = {metros:F2} metros");
         }
+          }
+    }
+}
