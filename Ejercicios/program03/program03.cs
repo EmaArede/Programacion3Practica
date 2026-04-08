@@ -1,6 +1,6 @@
 using System;
 
-namespace RegistroUsuarioSimple
+namespace ConversorUnidades
 {
     class Program
     {

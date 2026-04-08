@@ -1,3 +1,11 @@
+using System;
+
+namespace RegistroUsuarioSimple
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
   Console.WriteLine("=== SISTEMA DE REGISTRO DE USUARIO ===\n");
 
             string usuarioRegistrado = "";
@@ -44,3 +52,6 @@
 
             Console.WriteLine("\nPresiona cualquier tecla para salir...");
             Console.ReadKey();
+              }
+    }
+}
