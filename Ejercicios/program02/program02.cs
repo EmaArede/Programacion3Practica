@@ -1,3 +1,11 @@
+using System;
+
+namespace PromedioEdades
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
 Console.WriteLine("=== PROMEDIO DE EDADES - 6° SECUNDARIO ===\n");
 
             int[] edades = { 17, 18, 17, 16, 18, 17, 18, 19, 17, 18 };
@@ -14,3 +22,6 @@ Console.WriteLine("=== PROMEDIO DE EDADES - 6° SECUNDARIO ===\n");
             Console.WriteLine($"\n📊 Total de alumnos: {edades.Length}");
             Console.WriteLine($"📊 Suma de edades: {suma}");
             Console.WriteLine($"📊 Promedio de edades: {promedio:F2} años");
+            }
+    }
+}
