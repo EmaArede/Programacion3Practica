@@ -1,3 +1,5 @@
+// 1. Un loggin simple para un cajero automático, incluye 3 intentos para inresar y validación utilizando ciclos for  y if 
+
 using System;
 
 namespace CajeroLogin
@@ -51,4 +53,8 @@ Console.WriteLine("=== CAJERO AUTOMÁTICO ===\n");
             Console.ReadKey();
               }
     }
+
 }
+
+
+
