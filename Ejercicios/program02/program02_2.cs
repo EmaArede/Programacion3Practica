@@ -1,4 +1,4 @@
-//2 Un programa para calcular el promedio de notas utilizando arrays finitos
+//2 Un programa para calcular el promedio de notas utilizando arrays finitos (las notas están predefinidas por el código)
 
 using System;
 
