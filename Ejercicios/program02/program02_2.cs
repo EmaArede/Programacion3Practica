@@ -24,7 +24,7 @@ namespace NotasConArray
             }
             double promedio = suma / notas.Length;
 
-            Console.WriteLine($"\n📊 Promedio de la clase: {promedio:F2}");
+            Console.WriteLine($"\n Promedio de la clase: {promedio:F2}");
         }
     }
 }

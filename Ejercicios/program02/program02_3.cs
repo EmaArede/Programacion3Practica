@@ -27,7 +27,7 @@ namespace NotasList
             }
             double promedio = suma / notas.Count;
 
-            Console.WriteLine($"\n📊 Promedio de la clase: {promedio:F2}");
+            Console.WriteLine($"\n Promedio de la clase: {promedio:F2}");
         }
     }
 }
