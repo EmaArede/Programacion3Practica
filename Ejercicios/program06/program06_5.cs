@@ -6,7 +6,7 @@ namespace ConstantesBooleanas
     {
         // Constantes booleanas
         const bool EDAD_MINIMA_REQUERIDA = true;
-        const bool VERIFICACION_DOS_FACTORES = false;
+        const bool VERIFICACION_DOS_FACTORES = true;
         const bool MANTENIMIENTO_SISTEMA = false;
 
         static void Main(string[] args)
@@ -17,9 +17,9 @@ namespace ConstantesBooleanas
             Console.WriteLine($" ¿Verificación dos factores? {VERIFICACION_DOS_FACTORES}");
             Console.WriteLine($" ¿Sistema en mantenimiento? {MANTENIMIENTO_SISTEMA}");
 
-            if (VERIFICACION_DOS_FACTORES)
+            if (EDAD_MINIMA_REQUERIDA)
             {
-                Console.WriteLine("\n Verificación fallida");
+                Console.WriteLine("\n No cumple con la edad mínima requerida");
             }
             else
             {
